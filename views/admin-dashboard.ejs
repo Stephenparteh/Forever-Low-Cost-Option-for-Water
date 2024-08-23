@@ -1,0 +1,51 @@
+<%- include ('layouts/dashboard'); %>
+
+
+    <!-- Dashboard Overview -->
+    <div id="dashboard" class="col-md-9 ml-sm-auto col-lg-10 px-4 content"
+        style="position: absolute; top: 20px; right: 20px;">
+        <div class="card-header">
+            <h4>Dashboard Overview</h4>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card text-white bg-primary mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Total Users</h5>
+                            <p class="card-text">
+                                <%= totalUsers %>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-white bg-success mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Total Households</h5>
+                            <p class="card-text">
+                                <%= totalHousehold %>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-white bg-info mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Water Sources</h5>
+                            <p class="card-text">5 Active</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-white bg-warning mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Pending Payments</h5>
+                            <p class="card-text">10</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>

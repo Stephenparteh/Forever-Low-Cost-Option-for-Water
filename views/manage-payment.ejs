@@ -1,0 +1,43 @@
+<%- include ('layouts/dashboard'); %>
+
+    <!-- Manage Payments Section -->
+    <div id="manage-payment" class="col-md-9 ml-sm-auto col-lg-10 px-4 content"
+        style="position: absolute; top: 20px; right: 20px;">
+        <div class="card-header">
+            <h4>Manage Payments</h4>
+        </div>
+        <div class="card-body">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Household</th>
+                        <th>Amount</th>
+                        <th>Date</th>
+                        <th>Method</th>
+                        <th>Transaction ID</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Example Row -->
+                    <tr>
+                        <td>1</td>
+                        <td>Doe Residence</td>
+                        <td>$50</td>
+                        <td>2024-08-15</td>
+                        <td>Orange Money</td>
+                        <td>123456</td>
+                        <td>Completed</td>
+                        <td>
+                            <button class="btn btn-sm btn-warning">Edit</button>
+                            <button class="btn btn-sm btn-danger">Delete</button>
+                        </td>
+                    </tr>
+                    <!-- More rows as needed -->
+                </tbody>
+            </table>
+            <button class="btn btn-primary">Add New Payment</button>
+        </div>
+    </div>

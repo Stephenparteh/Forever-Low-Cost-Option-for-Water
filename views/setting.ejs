@@ -1,0 +1,26 @@
+<%- include('layouts/dashboard'); %>
+
+    <!-- Settings Section -->
+    <div id="settings" class="col-md-9 ml-sm-auto col-lg-10 px-4 content"
+        style="position: absolute; top: 20px; right: 20px;">
+        <div class="card-header">
+            <h4>Settings</h4>
+        </div>
+        <div class="card-body">
+            <form>
+                <div class="mb-3">
+                    <label for="adminName" class="form-label">Admin Name</label>
+                    <input type="text" class="form-control" id="adminName" placeholder="Enter your name">
+                </div>
+                <div class="mb-3">
+                    <label for="adminEmail" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="adminEmail" placeholder="Enter email">
+                </div>
+                <div class="mb-3">
+                    <label for="adminPassword" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="adminPassword" placeholder="Password">
+                </div>
+                <button type="submit" class="btn btn-primary">Update Settings</button>
+            </form>
+        </div>
+    </div>

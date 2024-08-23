@@ -1,0 +1,41 @@
+<%- include ('layouts/dashboard'); %>
+
+    <!-- Manage Water Sources Section -->
+    <div id="manage-water-source" class=" col-md-9 ml-sm-auto col-lg-10 px-4 content"
+        style="position: absolute; top: 20px; right: 20px;">
+        <div class="card-header">
+            <h4>Manage Water Sources</h4>
+        </div>
+        <div class="card-body">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Location</th>
+                        <th>Capacity</th>
+                        <th>Current Level</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Example Row -->
+                    <tr>
+                        <td>1</td>
+                        <td>Central Well</td>
+                        <td>Downtown</td>
+                        <td>10000L</td>
+                        <td>7500L</td>
+                        <td>Active</td>
+                        <td>
+                            <button class="btn btn-sm btn-warning">Edit</button>
+                            <button class="btn btn-sm btn-danger">Delete</button>
+                        </td>
+                    </tr>
+                    <!-- More rows as needed -->
+                </tbody>
+            </table>
+            <button class="btn btn-primary">Add New Water Source</button>
+        </div>
+    </div>

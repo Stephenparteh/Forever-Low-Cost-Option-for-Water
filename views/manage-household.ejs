@@ -1,0 +1,50 @@
+<%- include ('layouts/dashboard'); %>
+
+    <!-- Manage Households Section -->
+    <div id="manage-household" class="col-md-9 ml-sm-auto col-lg-10 px-4 content"
+        style="position: absolute; top: 20px; right: 20px;">
+        <div class="card-header">
+            <h4>Manage Households</h4>
+        </div>
+        <div class="card-body">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Household Name</th>
+                        <th>Owner</th>
+                        <th>Address</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Example Row -->
+                    <% totalHouseholds.forEach(household=> { %>
+                        <tr>
+                            <td>
+                                <%= count++ %>
+                            </td>
+                            <td>
+                                <%= household.name %>
+                            </td>
+                            <td>John Doe</td>
+                            <td>
+                                <%= household.address %>
+                            </td>
+                            <td>
+                                <%= household.connection_status %>
+                            </td>
+                            <td>
+                                <button class="btn btn-sm btn-warning">Edit</button>
+                                <button class="btn btn-sm btn-danger">Delete</button>
+                            </td>
+                        </tr>
+                        <% }) %>
+
+                            <!-- More rows as needed -->
+                </tbody>
+            </table>
+            <!-- <a class="btn btn-primary" href="/add-household">Add New Household</a> -->
+        </div>
+    </div>
